@@ -1,15 +1,12 @@
 import React from 'react';
+import './App.css';
+import GoalList from './components/GoalList';
 
 const App = () => {
-  return <h1 title="This works">Hi, <span>this is </span>A ReactJS App!</h1>;//this wirks because it translates to React.createElement('h1', {title: 'this works'}, ...)
+  return (<div className="course-goals">
+    <h2>Course Goals</h2>
+    <GoalList />
+  </div>
+  );
 };
-
-
-// class App extends React.Component{    //this is the same regular expression
-//   render(){
-//     return <h1 title="This works">Hi, <span>this is </span>A ReactJS App!</h1>;
-//   }
-// }
-
-
 export default App;
