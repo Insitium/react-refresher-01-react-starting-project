@@ -4,8 +4,9 @@ import './GoalList.css';
 const GoalList = props => {
     return( 
     <ul className="goal-list">
-      {[<li>Hi</li>,<li>This worls</li>]}
-      
+      {props.goals.map((goal => {
+        return <li>{goal.text}</li>;
+      }))}
   </ul>
     );
 };
